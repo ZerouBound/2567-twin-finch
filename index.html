@@ -4,591 +4,314 @@
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,900" rel="stylesheet">
+<script src="https://use.fontawesome.com/d953d068de.js"></script>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<title>Responsive web</title>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+<title>Twin Finch</title>
 </head>
 
 <body>
 
+<header>
+	<div></div>
+	<div>
+		<div class="wrapper row">	
+			<div class="col-1-6 float-l">
+				<a href="#home">
+					<h1>
+						<img src="img/logo.png" alt="Twin Finch Roastery" class="col-1-2">
+					</h1>
+				</a>
+			</div>
+			<nav class="float-r">
+				<ul>
+					<li>
+						<a href="#products">Products</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<p>
+			An authentic Micro Roastery<br>
+			Small, dedicated, and highly focused on quality
+		</p>
+		
+		<div class="row">
+			<p>Buy now</p>
+			<p>About us</p>
+		</div>
+		
+	</div>
+	
+</header>
 
-<div class="wrapper">
-	<div class="row">
-        <div class="col-1-2">
-        	<figure>
-            	<img src="img/photo.jpg" alt="Freaky red eyed Owl">
-            	<figcaption>The facebookilous stockerous Owl is a known predator and pervert</figcaption>
-            </figure>
-        </div>
-        <div class="col-1-2">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-1">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-2">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-2">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-2-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-        <div class="col-3-4">
-        	<div class="red"></div>
-        </div>
-    </div>
-<!--Aditional variatons 
-    
-    <div class="row">
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-2">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-4">
-        	<div class="red"></div>
-        </div>
-    </div>
--->    
-    <div class="row">
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-    </div>
-<!--Aditional variatons    
-    <div class="row">
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-4-5">
-        	<div class="red"></div>
-        </div>       
-    </div>
-    
-    <div class="row">
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-3-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-2-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-2-5">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-2-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-5">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-3-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-2-5">
-        	<div class="red"></div>
-        </div>
-    </div>
--->       
-    <div class="row">
-        <div class="col-2-5">
-        	<div class="red"></div>
-        </div>
-        <div class="col-3-5">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-5-6">
-        	<div class="red"></div>
-        </div>
-    </div>
-<!--Aditional variatons    
-    <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-2-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-2">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-     <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-6">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-3">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-2">
-        	<div class="red"></div>
-        </div>
-    </div>
--->
-    
-    <div class="row">
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    
-    <div class="row">
-        <div class="col-2-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-5-7">
-        	<div class="red"></div>
-        </div>
-    </div>
-<!--Aditional variatons    
-    <div class="row">
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-6-7">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-5-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-7">
-        	<div class="red"></div>
-        </div>
-        <div class="col-4-7">
-        	<div class="red"></div>
-        </div>
-    </div>
--->    
-    <div class="row">
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-8">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-3-8">
-        	<div class="red"></div>
-        </div>
-        <div class="col-5-8">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-9">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-4-9">
-        	<div class="red"></div>
-        </div>
-        <div class="col-5-9">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-10">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-3-10">
-        	<div class="red"></div>
-        </div>
-        <div class="col-7-10">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-11">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-2-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-3-11">
-        	<div class="red"></div>
-        </div>
-        <div class="col-6-11">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-         <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-1-12">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-5-12">
-        	<div class="red"></div>
-        </div>
-        <div class="col-7-12">
-        	<div class="red"></div>
-        </div>
-    </div>
-    
-    
-    
-    
-    
-</div>
+<blockquote>
+	<div class="wrapper">
+		<p>
+			“This <strong>extraordinary coffee</strong> almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - <a href="http://www.coffeereview.com/" target="_blank">Coffee Review</a>
+		</p>
+	</div>
+</blockquote>
 
+<section id="products">
+	<div class="wrapper">
+		<header>
+			<h2>Our Roasts</h2>
+			<p>
+				We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.
+			</p>
+		</header>
+
+			<section class="row">
+				<img src="tbd" alt="tbd" class="col-7-12">
+				<div class="col-1-3 float-r">
+					<header>
+						<h3>The evening oak</h3>
+					</header>
+					<p>
+						<b>Medium-Dark</b><br>
+						Eastern Java, Indonesia
+					</p>
+					<p>
+						Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.
+					</p>
+					<p>
+						$17.95/Lb
+					</p>
+					<p>
+						<a>Buy now</a>
+					</p>
+				</div>
+			</section>
+
+		<div class="row">
+			<section class="col-1-4">
+				<img src="tbd" alt="tbd">
+				<header>
+					<h3>Finch house blend</h3>
+				</header>
+				<p>
+					<b>Medium-Dark</b><br>
+					Cajamarca &amp; Moyobamba Regions, Peru
+
+				</p>
+				<p>
+					Hint of citrus, complemented by flavors of dark chocolate, peanut
+				</p>
+
+				<p>
+					$17.95/Lb
+				</p>
+
+
+				<p>
+					<a>Buy now</a>
+				</p>
+			</section>
+
+			<section class="col-1-4">
+				<img src="tbd" alt="tbd">
+				<header>
+					<h3>Sunrise</h3>
+				</header>
+				<p>
+					<b>Light</b><br>
+					La Chiapas, Mexico
+				</p>
+				<p>
+					Light, fruity acidity which complements its fully nutty body and unique spicy tones.
+				</p>
+
+				<p>
+					$17.95/Lb
+				</p>
+
+				<p>
+					<a>Buy now</a>
+				</p>
+			</section>
+
+			<section class="col-1-4">
+				<img src="tbd" alt="tbd">
+				<header>
+					<h3>Midnight</h3>
+				</header>
+				<p>
+					<b>Dark</b><br>
+					Latin America
+				</p>
+				<p>
+					Roasted into second crack for a big, bold and dark cup. Beans display oil.
+				</p>
+
+				<p>
+					$17.95/Lb	
+				</p>
+
+				<p>
+					<a>Buy now</a>
+				</p>
+			</section>
+
+			<section class="col-1-4">
+				<img src="tbd" alt="tbd">
+				<header>
+					<h3>Espresso</h3>
+				</header>
+				<p>
+					<b>Light</b><br>
+					Latin America, Africa, Indonesia
+				</p>
+				<p>
+					Clean, a little roasty, sumptuous crema, unfussy, delicious.
+				</p>
+
+				<p>
+					$19.95/Lb
+				</p>
+
+				<p>
+					<a>Buy now</a>
+				</p>
+			</section>
+		</div>
+	</div>
+</section>
+
+<section id="about">
+	<div class="wrapper">
+		<header>
+			<h2>
+				About us
+			</h2>
+			<p>
+				Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality. 
+			</p>
+		</header>
+		<div class="row">
+			<div class="col-1-2">
+				<p>
+					Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can’t be understated. 
+				</p>
+			</div>
+			<div>
+				<p>
+					Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.
+				</p>
+			</div>
+		</div>
+
+		<p>
+			<a>How to brew</a>
+		</p>
+	</div>
+</section>
+
+<form>
+	<div class="wrapper">
+		<fieldset>
+			<p>Subscribe to our news</p>	
+			
+         	<label for="email">Email</label>
+          	<input type="email" name="email" id="email" placeholder="Example@email.com">
+          						
+			<div class="col-1-6 float-r"><p><a href="#">Submit</a></p></div>
+		</fieldset>
+	</div>
+</form>
+
+<section id="contact">
+	<div class="wrapper">
+		<header>
+			<h2>
+				Contact us
+			</h2>
+			<p>
+				We only ship the freshest coffee and your satisfaction is guaranteed. We only ship whole bean, but will grind for you in-store per request.
+			</p>
+		</header>
+		<div class="row">
+			<form class="col-1-2">
+				<fieldset>	
+					<label for="name">Name</label>
+            		<input type="text" class="col-1-2" name="name" id="name" placeholder="Name">
+            		
+            		<label for="phone">Phone</label>
+            		<input type="number" name="name" id="phone" placeholder="Phone">
+					
+					<textarea placeholder="Comments"></textarea>
+					
+					<p><a href="#">Submit</a></p>
+				 </fieldset>
+			</form>
+			<div class="col-1-2 float-r">
+				<div class="row">
+					<div class="col-1-2" id="map"></div>
+					<div class="col-1-2 float-r">
+						<p>
+							Online orders usually ship quickly and arrive within three business days. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. 
+						</p>
+					</div>
+				</div>
+				<p>
+					You can buy from us directly at our Portland storefront located at 457 NW Market Street.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="wrapper row">
+		<div class="col-1-3 float-r">
+			<ul >
+				<li>
+					<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.google.com" target="_blank"><i class="fa fa-googleplus-square" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+
+			<a href="#home">
+				<h4>
+					<img src="img/logo.png" alt="Twin Finch Roastery" class="col-1-4 float-r">
+				</h4>
+			</a>
+		</div>
+			
+		</div>
+</footer>
+	
 </body>
-</html>
+
+
+</html>	

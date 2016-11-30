@@ -233,4 +233,34 @@ img {
 }
 
 
+
+
+* {
+	color: white;
+}
+
+.float-r {
+	float: right;
+}
+
+
+li {
+	display:inline-block;
+}
+
+section > .wrapper > header {
+	text-align: center;
+}
+
+#products section.col-1-4 {
+	text-align: center;
+}
+
+h1, h4 { 
+	margin: 0;
+}
+
+footer ul, h4 {
+	display:inline-block;
+}
 	

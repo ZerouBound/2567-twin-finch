@@ -5,7 +5,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900" rel="stylesheet">
 <script src="https://use.fontawesome.com/d953d068de.js"></script>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -29,14 +29,14 @@
 
 <body>
 
-<header>
+<header id="home">
 	<div></div>
 	<div>
 		<div class="wrapper row">	
-			<div class="col-1-6 float-l">
-				<a href="#home">
+			<div class="col-1-12">
+				<a href="#">
 					<h1>
-						<img src="img/logo.png" alt="Twin Finch Roastery" class="col-1-2">
+						<img src="img/logo.png" alt="Twin Finch Roastery">
 					</h1>
 				</a>
 			</div>
@@ -57,26 +57,25 @@
 	</div>
 	
 	<div class="wrapper">
-		<p>
-			An authentic Micro Roastery<br>
-			Small, dedicated, and highly focused on quality
-		</p>
-		
-		<div class="row">
-			<p>Buy now</p>
-			<p>About us</p>
+		<div class="col-1-2">
+			<p>
+				<span>An authentic Micro Roastery</span><br>
+				Small, dedicated, and highly focused on quality
+			</p>
+			<p>
+				<a href="#products">Products</a>
+				<a href="#about">About us</a>
+			</p>
 		</div>
 		
 	</div>
 	
 </header>
 
-<blockquote>
-	<div class="wrapper">
-		<p>
-			“This <strong>extraordinary coffee</strong> almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - <a href="http://www.coffeereview.com/" target="_blank">Coffee Review</a>
-		</p>
-	</div>
+<blockquote class="wrapper">
+	<p>
+		“This <strong>extraordinary coffee</strong> almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - <a href="http://www.coffeereview.com/" target="_blank">Coffee Review</a>
+	</p>
 </blockquote>
 
 <section id="products">
@@ -88,27 +87,27 @@
 			</p>
 		</header>
 
-			<section class="row">
-				<img src="tbd" alt="tbd" class="col-7-12">
-				<div class="col-1-3 float-r">
-					<header>
-						<h3>The evening oak</h3>
-					</header>
-					<p>
-						<b>Medium-Dark</b><br>
-						Eastern Java, Indonesia
-					</p>
-					<p>
-						Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.
-					</p>
-					<p>
-						$17.95/Lb
-					</p>
-					<p>
-						<a>Buy now</a>
-					</p>
-				</div>
-			</section>
+		<section class="row">
+			<img src="tbd" alt="tbd" class="col-7-12">
+			<div class="col-1-3 float-r">
+				<header>
+					<h3>The evening oak</h3>
+				</header>
+				<p>
+					<b>Medium-Dark</b><br>
+					Eastern Java, Indonesia
+				</p>
+				<p>
+					Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.
+				</p>
+				<p>
+					$17.95/Lb
+				</p>
+				<p>
+					<a href="https://www.google.com" target="_blank">Buy now</a>
+				</p>
+			</div>
+		</section>
 
 		<div class="row">
 			<section class="col-1-4">
@@ -131,7 +130,7 @@
 
 
 				<p>
-					<a>Buy now</a>
+					<a href="https://www.google.com" target="_blank">Buy now</a>
 				</p>
 			</section>
 
@@ -153,7 +152,7 @@
 				</p>
 
 				<p>
-					<a>Buy now</a>
+					<a href="https://www.google.com" target="_blank">Buy now</a>
 				</p>
 			</section>
 
@@ -175,7 +174,7 @@
 				</p>
 
 				<p>
-					<a>Buy now</a>
+					<a href="https://www.google.com" target="_blank">Buy now</a>
 				</p>
 			</section>
 
@@ -197,7 +196,7 @@
 				</p>
 
 				<p>
-					<a>Buy now</a>
+					<a href="https://www.google.com" target="_blank">Buy now</a>
 				</p>
 			</section>
 		</div>
@@ -220,7 +219,7 @@
 					Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can’t be understated. 
 				</p>
 			</div>
-			<div>
+			<div class="col-1-2">
 				<p>
 					Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.
 				</p>
@@ -228,21 +227,19 @@
 		</div>
 
 		<p>
-			<a>How to brew</a>
+			<a href="https://www.google.com" target="_blank">How to brew</a>
 		</p>
 	</div>
 </section>
 
 <form>
 	<div class="wrapper">
-		<fieldset>
-			<p>Subscribe to our news</p>	
-			
-         	<label for="email">Email</label>
-          	<input type="email" name="email" id="email" placeholder="Example@email.com">
-          						
-			<div class="col-1-6 float-r"><p><a href="#">Submit</a></p></div>
-		</fieldset>
+		<p>Subscribe to our news</p>	
+
+		<label for="subscribe-email">Email</label>
+		<input type="email" name="subscribe-email" id="subscribe-email" placeholder="Example@email.com">
+
+		<div class="col-1-6 float-r"><p><a href="#">Submit</a></p></div>
 	</div>
 </form>
 
@@ -258,22 +255,20 @@
 		</header>
 		<div class="row">
 			<form class="col-1-2">
-				<fieldset>	
-					<label for="name">Name</label>
-            		<input type="text" class="col-1-2" name="name" id="name" placeholder="Name">
-            		
-            		<label for="phone">Phone</label>
-            		<input type="number" name="name" id="phone" placeholder="Phone">
-					
-					<textarea placeholder="Comments"></textarea>
-					
-					<p><a href="#">Submit</a></p>
-				 </fieldset>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="Name">
+
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Email">
+
+				<textarea placeholder="Comments"></textarea>
+
+				<p><a href="#">Submit</a></p>
 			</form>
-			<div class="col-1-2 float-r">
+			<div class="col-1-2">
 				<div class="row">
 					<div class="col-1-2" id="map"></div>
-					<div class="col-1-2 float-r">
+					<div class="col-1-2">
 						<p>
 							Online orders usually ship quickly and arrive within three business days. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. 
 						</p>
@@ -303,9 +298,7 @@
 			</ul>
 
 			<a href="#home">
-				<h4>
-					<img src="img/logo.png" alt="Twin Finch Roastery" class="col-1-4 float-r">
-				</h4>
+				<img src="img/logo.png" alt="Twin Finch Roastery" class="col-1-4 float-r">
 			</a>
 		</div>
 			

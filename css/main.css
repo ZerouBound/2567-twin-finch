@@ -51,11 +51,6 @@ img {
 	width:50%;
 }
 
-.red {
-	background:red;
-	height:100px;
-}
-
 .col-1-3 {
 	width:33.33%;
 }
@@ -186,50 +181,7 @@ img {
 
 
 
-@media (max-width: 480px) {
-	[class*='col-'] {
-		padding: 0 10px;
-		margin-bottom:20px;
-	}
-	
-	.wrapper {
-		width:85%;
-	}
-	
-	
-	.col-1-6, .col-1-9, .col-2-7 {
-		width:33.33%;
-	}
-	
-	.col-1-6:nth-child(3), .col-1-8:nth-child(4), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(even), .col-1-12:nth-child(4), .col-1-12:nth-child(8) {
-		padding-right:0;
-	}
-	
-	.col-1-6:nth-child(4), .col-1-8:nth-child(5), .col-1-9:nth-child(4), .col-1-9:nth-child(7), .col-1-10:nth-child(odd), .col-1-12:nth-child(5), .col-1-12:nth-child(9) {
-		padding-left:0;
-	}
-	
-	.col-5-6, .col-5-7 {
-		width:66.66%;
-	}
-	
-	.col-1-7, .col-1-11 {
-		width:100%;
-	}
-	
-	.col-2-7, .col-5-7, .col-1-7, .col-1-11 {
-		padding:0;
-	}
-	
-	.col-1-8, .col-1-12 {
-		width:25%;
-	}
-	
-	.col-1-10 {
-		width:50%;
-	}
 
-}
 
 .float-r {
 	float: right;
@@ -280,9 +232,80 @@ body > header > div:last-child {
 #contact > .wrapper > .row > .col-1-2 .col-1-2 {
 		width:100%;
 	}
+* {
+	font-family: 'Raleway', sans-serif;
+}
 
+h2, h3, h4, a {
+	text-transform: uppercase;
+}
+h2 {
+	font-weight: 700;
+}
+h3 {
+	font-weight: 400;
+	border-bottom: solid medium yellow;
+}
+
+#products .row > .col-1-4 > p:nth-child(3), #products .row > .col-1-3 > p:nth-child(2) {
+	font-style: italic;
+	font-weight:400;
+	
+}
+
+p {
+	font-weight:200;
+}
+
+#products .row > .col-1-4 > p:nth-child(3) b, #products .row > .col-1-3 > p:nth-child(2) b {
+	font-style: normal;
+	font-weight: 900      
+}
+
+body > header > div:nth-child(3) {
+
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:white;
+}
+
+body > header > div:nth-child(3) p span {
+
+	font-size:2.4rem;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+body > header > div:nth-child(3) > .col-1-2 {
+	float:none;
+}
+
+#home .col-1-12 {
+	margin-left:8.33%;
+}
+
+label {
+	display:none;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
 
 @media (max-width: 480px) {
+	[class*='col-'] {
+		padding: 0 10px;
+		margin-bottom:20px;
+	}
+}
+	
+@media (max-width: 480px) {
+	.wrapper {
+		width:85%;
+	}
 	
 	#products > .wrapper > .row:nth-child(3) > .col-1-4 {
 		width:50%;
@@ -304,4 +327,18 @@ body > header > div:last-child {
 		width:100%;
 	}
 	
+	#contact > .wrapper > .row > .col-1-2 .col-1-2{
+		width:50%;
+	}
+	
+	#home .col-1-12 {
+		width:25%;
+		margin:0 auto;
+		float:none;
+	}
+	
+	nav.float-r {
+		float:none;
+		text-align:center;
+	}
 }

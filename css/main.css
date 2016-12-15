@@ -14,32 +14,47 @@
 	1.3 - Buttons
 	1.4 - Forms
 	1.5 - Lists
-	1.6 - Tables
 2.0 - Navigation Menus
 	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
+	2.2 - Footer
 3.0 - Content
 	3.1 - Site Structure
 	3.2	- Site Header
 	3.3	- Site Footer
 4.0 - Media
 5.0 - Utility
-	5.1 - Text Sizes
-	5.2 - Colors
-	5.3 - Alignments
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 1.0 - Typography
 -------------------------------------------------------------- */
-
+html {
+	font-size:16px
+}
 * {
 	font-family: 'Raleway', sans-serif;
 }
+/*----------------------------------
+1.1 - Headings
+-----------------------------------*/
 h1 { 
 	margin: 0;
 }
+h2, h3, a {
+	text-transform: uppercase;
+}
+h2, body > header > div:nth-child(3) p span {
+	font-weight:700;
+}
+h3, #products .row > .col-1-4 > p:nth-child(3), #products .row > .col-1-3 > p:nth-child(2) {
+	font-weight:400;
+}
+h3 {
+	border-bottom: solid medium rgba( 233, 216, 0, 1.0);
+}
+/*----------------------------------
+1.2 - Body Copy
+-----------------------------------*/
 blockquote {
 	font-style: italic;
 	padding:4rem 0;
@@ -49,55 +64,58 @@ blockquote a {
 	text-transform: capitalize;
 	font-style:normal;
 }
+
 blockquote p {
 	font-size: 1.5rem;
 	line-height:1.8rem;
 }
-h2, h3, a {
-	text-transform: uppercase;
-}
-h2 {
-	font-weight: 700;
-}
-h3 {
-	font-weight: 400;
-	border-bottom: solid medium rgba( 233, 216, 0, 1.0);
-}
-
 body > header > .wrapper > .col-1-2:first-child > p:first-child {
 	line-height: 2rem;
 }
 #products .row > .col-1-4 > p:nth-child(3), #products .row > .col-1-3 > p:nth-child(2) {
 	font-style: italic;
-	font-weight:400;	
 }
 p {
 	font-weight:200;
 }
 #products .row > .col-1-4 > p:nth-child(3) b, #products .row > .col-1-3 > p:nth-child(2) b {
 	font-style: normal;
-	font-weight: 900      
+	font-weight:900      
 }
 body > header > div:nth-child(3) p span {
 	font-size:2.4rem;
-	font-weight:700;
 	text-transform: uppercase;
 }
+p {
+	font-size:.8rem;
+	font-weight:300;
+	line-height: 1.1rem;
+}
+header p {
+	font-size:1.1rem;
+	line-height:1.3rem;
+}
+/*----------------------------------
+1.3 - Buttons
+-----------------------------------*/
 #products a, form a, #home > div.wrapper:nth-child(3) p:last-child a, #about a {
-	display:inline-block;
 	text-decoration:none;
 	background:rgba( 233, 216, 0, 1.0);
-	font-weight:600;
 	color:#000;
 	padding:.2rem 2rem;
 	margin:0;
 	border:medium solid rgba( 233, 216, 0, 1.0);
 }
+#products a, form a, #home > div.wrapper:nth-child(3) p:last-child a, #about a, body > form > .wrapper > .col-1-6, body > form > .wrapper > .col-7-12, li {
+	display:inline-block;
+}
+#products a, form a, #home > div.wrapper:nth-child(3) p:last-child a, #about a, #products a:hover, form a:hover, #home > div.wrapper:nth-child(3) p:last-child a:hover, #home > div.wrapper:nth-child(3) p:last-child a:last-child:hover, header li:nth-child(2) a:hover, #home > div.wrapper:nth-child(3) p:last-child a:last-child, header li:nth-child(2) a {
+	font-weight:600;
+}
 #products a:hover, form a:hover, #home > div.wrapper:nth-child(3) p:last-child a:hover, #home > div.wrapper:nth-child(3) p:last-child a:last-child:hover, header li:nth-child(2) a:hover {
 	background:rgba( 233, 216, 0, 0.6);
 	border-color:rgba( 233, 216, 0, 0.1);
 	color:rgba( 0, 0, 0, 1.0);
-	font-weight: 600;
 }
 li a, blockquote a {
 	color:rgba( 233, 216, 0, 1.0);
@@ -108,18 +126,69 @@ li a {
 li a:hover, blockquote a:hover {
 	color:rgba( 233, 216, 0, 0.6);
 }
-
-li {
-	display:inline-block;
+header li, header li:nth-child(2) a {
+	padding:.2rem 1rem;
+}
+#products .col-1-4 a {
+	margin-top:1.2rem;
+}
+#products .col-1-4:first-child a {
+	margin-top:0;
+}
+#products .col-1-4:last-child a {
+	margin-top:1.2rem;
+}
+body > form a {
+	padding: .5rem 4rem;
+}
+/*----------------------------------
+1.4 - Forms
+-----------------------------------*/
+::-webkit-input-placeholder {
+  font-style:italic;
 }
 
-section > .wrapper > header {
-	text-align: center;
+:-moz-placeholder { /* Firefox 18- */
+   font-style:italic;  
 }
-#products section.col-1-4, blockquote, #about .wrapper > p:last-child  {
-	text-align: center;
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-style:italic;  
 }
-#home > div.wrapper:nth-child(3) p:last-child br {
+
+:-ms-input-placeholder {  
+   font-style:italic;  
+}
+#contact input, #contact textarea {
+	width:96%;
+	margin:0 auto 2rem;
+	padding:.7rem;
+}
+#contact textarea {
+	padding:.7rem .7rem 3.5rem;
+}
+#subscribe-email {
+	padding:.7rem;
+	margin:0 1rem;;
+	width:62.2%
+}
+#contact form p {
+	text-align:right;
+	margin:0;
+	text-transform: uppercase;
+	padding-right:1.4rem;
+}
+/*----------------------------------
+1.5 - Lists
+-----------------------------------*/
+ul {
+	margin:0;
+	padding:0;
+}
+section > .wrapper > header, #products section.col-1-4, blockquote, #about .wrapper > p:last-child {
+	text-align:center;
+}
+#home > div.wrapper:nth-child(3) p:last-child br, label {
 	display:none;
 }
 #home > div.wrapper:nth-child(3) p:last-child a {
@@ -130,28 +199,23 @@ section > .wrapper > header {
 	background:none;
 	color:rgba( 233, 216, 0, 1.0);
 	border:medium solid rgba( 233, 216, 0, 1.0);
-	font-weight:600;
 }
-
-p {
-	font-size:.8rem;
-	line-height: 1.1rem;
-}
-
-header p {
-	font-size:1.1rem;
-	line-height:1.3rem;
-}
-
-body > form  {
-	padding:1rem 0;
-}
-
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
 -------------------------------------------------------------- */
+
+/*----------------------------------
+2.1 - Main
+-----------------------------------*/
 body > header div.wrapper.row > nav {
 	margin-left:35%;
+}
+/*----------------------------------
+2.2 - Footer
+-----------------------------------*/
+footer li {
+	padding-right:2rem;
+	font-size:1.4rem;
 }
 /*--------------------------------------------------------------
 3.0 - Content
@@ -160,6 +224,9 @@ body > header div.wrapper.row > nav {
 /*----------------------------------
 3.1 - Site Structure
 -----------------------------------*/
+body {
+	margin:0;
+}
 #products .wrapper > section.row .col-1-3 {
 	margin-left:4.125%
 }
@@ -168,9 +235,6 @@ body > header div.wrapper.row > nav {
 }
 #contact .col-1-2 > .row, #contact .col-1-2 > .row [class*='col-'] {
 	padding:0;
-}
-.col-1-1 {
-	width:100%;
 }
 .col-1-2 {
 	width:50%;
@@ -184,89 +248,11 @@ body > header div.wrapper.row > nav {
 .col-1-4 {
 	width:25%;
 }
-.col-3-4 {
-	width:75%;
-}
-.col-1-5 {
-	width:20%;
-}
-.col-2-5 {
-	width:40%;
-}
-.col-3-5 {
-	width:60%;
-}
-.col-4-5 {
-	width:80%;
-}
 .col-1-6 {
 	width:16.66%;
 }
-.col-5-6 {
-	width:83.33%;
-}
-.col-1-7 {
-	width:14.285%;
-}
-.col-2-7 {
-	width:28.571%;
-}
-.col-3-7 {
-	width:42.857%;
-}
-.col-4-7 {
-	width:57.142%;
-}
-.col-5-7 {
-	width:71.428%;
-}
-.col-6-7 {
-	width:85.714%;
-}
-.col-1-8 {
-	width:12.5%;
-}
-.col-3-8 {
-	width:37.5%;
-}
-.col-5-8 {
-	width:62.5%;
-}
-.col-1-9 {
-	width:11.11%;
-}
-.col-4-9 {
-	width:44.44%;
-}
-.col-5-9 {
-	width:55.55%;
-}
-.col-1-10 {
-	width:10%;
-}
-.col-3-10 {
-	width:30%;
-}
-.col-7-10 {
-	width:70%;
-}
-.col-1-11 {
-	width:9.09%;
-}
-.col-2-11 {
-	width:18.18%;
-}
-.col-3-11 {
-	width:27.27%;
-}
-.col-6-11 {
-	width:54.54%;
-}
 .col-1-12 {
 	width:8.33%;
-}
-.col-5-12 {
-	width:41.66%;
 }
 .col-7-12 {
 	width:58.33%;
@@ -275,8 +261,6 @@ body > header div.wrapper.row > nav {
 	float: right !important;
 }
 *, *:after, *:before {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	-o-box-sizing:border-box;
 	box-sizing:border-box;
@@ -305,23 +289,63 @@ body > header div.wrapper.row > nav {
 	padding-right:0;
 	padding-left:5px;
 }
-
 blockquote .col-2-3 {
 	float:none;
 	margin:0 auto;
 }
+#contact > .wrapper > .row > .col-1-2 .col-1-2 {
+	width:100%;
+}
+body > header > div:nth-child(3) > .col-1-2 {
+	float:none;
+}
+body > form .wrapper, body > header div.wrapper.row, #products .wrapper > section.row, footer .wrapper.row > .col-1-4 {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+body > form  {
+	padding:1rem 0;
+}
+#home .col-1-12 {
+	margin-left:8.33%;
+}
+body > form > .wrapper > .col-1-6, body > form > .wrapper > .col-7-12 {
+	float: none;
+}
 /*----------------------------------
 3.2 - Site Header
 -----------------------------------*/
-
 header li:nth-child(2) {
 	padding-left:2.4rem;
 }
-
+body > header > div:first-child {
+	padding: 200px;
+	z-index:-1;
+	position:absolute;
+	width:100%;
+}
+body > header > div:last-child {
+	padding:100px 8.33%;
+}
+header.col-2-3 {
+	margin:0 auto;
+	float:none;
+}
+/*----------------------------------
+3.3 - Site Footer
+-----------------------------------*/
+footer .col-1-4 {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
-
 img {
 	max-width:100%;
 }
@@ -335,288 +359,60 @@ body > header > div:nth-child(3) {
 	background-position: center;
 	color:white;
 }
-
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
-
-/*-- ISO REPAIR CODE
-[class*='col-'] {
-	float:left;
-}
-/*---------------*/
-
-body > header > div:first-child {
-	padding: 200px;
-	z-index:-1;
-	position:absolute;
-	width:100%;
-}
-body > header > div:last-child {
-	padding:100px 8.33%;
-}
 #products, body > form, body > header > div:first-child, footer, #contact {
 	background:#000;
 	color:#fff;
 }
-
-#contact > .wrapper > .row > .col-1-2 .col-1-2 {
-	width:100%;
-}
-
-
-
-
-
-
-body > header > div:nth-child(3) > .col-1-2 {
-	float:none;
-}
-
-#home .col-1-12 {
-	margin-left:8.33%;
-}
-
-label {
-	display:none;
-}
-
-ul {
-	margin:0;
-	padding:0;
-}
-
-header li, header li:nth-child(2) a {
-	padding:.2rem 1rem;
-}
-
-#contact form p {
-	text-align: right;
-	margin:0;
-	text-transform: uppercase;
-	padding-right:1.4rem;
-}
-
-body > form > .wrapper > .col-1-6, body > form > .wrapper > .col-7-12 {
-	float: none;
-	display:inline-block;
-}
-#contact input, #contact textarea {
-	width:96%;
-	margin:0 auto 2rem;
-	padding:.7rem;
-}
-
-#contact textarea {
-	padding:.7rem .7rem 3.5rem;
-}
-
-#subscribe-email {
-	padding:.7rem;
-	margin:0 1rem;;
-	width:62.2%
-}
-
-body > form a {
-	padding: .5rem 4rem;
-}
-
-header.col-2-3 {
-	margin:0 auto;
-	float:none;
-}
-
-::-webkit-input-placeholder {
-  font-style:italic;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   font-style:italic;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   font-style:italic;  
-}
-
-:-ms-input-placeholder {  
-   font-style:italic;  
-}
-
-body > form .wrapper, body > header div.wrapper.row, #products .wrapper > section.row, footer .wrapper.row > .col-1-4 {
-	display:flex;
-	align-items: center;
-}
-
-footer .col-1-4 {
-	justify-content: space-between;
-}
-
-footer li {
-	padding-right:2rem;
-	font-size:1.4rem;
-}
-
-
-
-#products .col-1-4 a {
-	margin-top:1.2rem;
-}
-
-#products .col-1-4:first-child a {
-	margin-top:0;
-}
-
-#products .col-1-4:last-child a {
-	margin-top:1.2rem;
-}
-
-
-
-
-
 
 
 @media (max-width: 480px) {
 	/*--------------------------------------------------------------
 	1.0 - Typography
 	--------------------------------------------------------------*/
-	#products, #about, #contact, #home {
+	#products, #about, #contact, #home, body > form p, body > header div.wrapper.row > nav, #contact form p  {
 		text-align:center;
 	}
+	p {
+		font-size:0.9rem;
+	}
+	/*----------------------------------
+	1.2 - Body Copy
+	-----------------------------------*/
 	#contact .col-1-2 > p:first-child {
 		text-align:left;
 		margin:0;
 	}
-	body > form p {
-		display:block;
-		text-align: center;
-	}
-	body > form > .wrapper > .col-1-6 {
-		float: none;
-		display:inline-block;
-	}
+	/*----------------------------------
+	1.3 - Buttons
+	-----------------------------------*/
 	#products .col-1-4:nth-child(2) a, #products .col-1-4:nth-child(3) a {
-		margin-top:2.8rem;
-	}
-	#products .col-1-4:nth-child(2), #products .col-1-4:nth-child(3) {
-		margin-bottom:2.78rem;
+		margin-top:2.45rem;
 	}
 	#products .col-1-4:nth-child(4) a {
-		margin-top:3.89rem;
+		margin-top:1.4rem;
 	}
-	
 	#products .col-1-4:nth-child(1) a {
 		margin-top:.25rem;
 	}
-	/*--------------------------------------------------------------
-	2.0 - Navigation Menus
-	--------------------------------------------------------------*/
-	
-	/*--------------------------------------------------------------
-	3.0 - Content
-	--------------------------------------------------------------*/
-	
-	/*--------------------------------------------------------------
-	4.0 - Media
-	--------------------------------------------------------------*/
-	
-	/*--------------------------------------------------------------
-	5.0 - Utility
-	--------------------------------------------------------------*/
-	.wrapper {
-		width:85%;
-	}
-	
-	#products > .wrapper > .row:nth-child(3) > .col-1-4 {
-		width:50%;
-	}
-	
-	#products > .wrapper > .row:nth-child(2) > .col-7-12 {
-		width:100%;
-	}
-	
-	#products > .wrapper > .row:nth-child(2) > .col-1-3 {
-		width:100%;
-	}
-	
-	#about .col-1-2 {
-		width:100%;
-	}
-	
-	#contact > .wrapper > .row > .col-1-2 {
-		width:100%;
-	}
-	
-	#contact > .wrapper > .row > .col-1-2 .col-1-2{
-		width:50%;
-	}
-	
-	#home .col-1-12 {
-		width:25%;
-		margin:0 auto;
-		float:none;
-	}
-	body > form > .wrapper > .col-7-12 {
-		width:75%;
-	}
-	
-	header.col-2-3, #contact input, #contact textarea {
-		width:100%;
-	}
-	
-	#contact .col-1-2 .col-1-2:last-child {
-		float:right !important;
-	}
-	
-	#home .col-1-2 {
-		width:100%;
-	}
-	
-	body > form .wrapper, body > header div.wrapper.row, #products .wrapper > section.row {
-		display:block;
-	}
-	
-	#map {
-		width:46% !important;
-		height: 170px;
-	}
-	
-	body > header div.wrapper.row > nav {
-		float:none;
-		text-align:center;
-		padding:.4rem 0;
-		margin-left:0;
-	}
-	
 	#home > div.wrapper:nth-child(3) p a:first-child {
 		margin-bottom:1.5rem;
 	}
-	
-	body > header > div:last-child {
-		padding:2rem 8.33%;
-	}
-	
-	blockquote .col-2-3 {
+	/*----------------------------------
+	1.4 - Forms
+	-----------------------------------*/
+	header.col-2-3, #contact input, #contact textarea {
 		width:100%;
 	}
-	
-	#products, #about, #contact, blockquote {
-		padding:2rem 0;
-	}
-	
-	#products .wrapper > section.row .col-1-3 {
-    	margin-left:0;
-	}
-	
 	#subscribe-email {
 		margin:0;
 		width:75%
 	}
-	
 	body > form p {
 		margin-bottom:.5rem;
 	}
-	
 	body > form p:last-child {
 		margin:0;
 	}
@@ -624,25 +420,87 @@ footer li {
 		padding:.5rem .9rem;
 		margin:0;
 	}
-	
-	#contact form p {
-		text-align: center;
-	}
-	
 	#contact form {
 		padding-bottom:4rem;
 	}
+	/*--------------------------------------------------------------
+	2.0 - Navigation Menus
+	--------------------------------------------------------------*/
+	body > header div.wrapper.row > nav {
+		float:none;
+		padding:.4rem 0;
+		margin-left:0;
+	}
+	/*--------------------------------------------------------------
+	3.0 - Content
+	--------------------------------------------------------------*/
 	
+	/*----------------------------------
+	3.1 - Site Structure
+	-----------------------------------*/
+	body > form p, body > form .wrapper, body > header div.wrapper.row, #products .wrapper > section.row {
+		display:block;
+	}
+	.wrapper {
+		width:85%;
+	}
+	#products > .wrapper > .row:nth-child(3) > .col-1-4, #contact > .wrapper > .row > .col-1-2 .col-1-2 {
+		width:50%;
+	}
+	#products > .wrapper > .row:nth-child(2) > .col-7-12, #products > .wrapper > .row:nth-child(2) > .col-1-3, #about .col-1-2, #contact > .wrapper > .row > .col-1-2, #home .col-1-2, blockquote .col-2-3 {
+		width:100%;
+	}
+	#home .col-1-12 {
+		width:25%;
+		margin:0 auto;
+		float:none;
+	}
+	#contact .col-1-2 .col-1-2:last-child {
+		float:right !important;
+	}
+	#products, #about, #contact, blockquote {
+		padding:2rem 0;
+	}
+	#products .wrapper > section.row .col-1-3 {
+    	margin-left:0;
+	}
+	body > form > .wrapper > .col-7-12 {
+		width:75%;
+	}
+	body > header > div:last-child {
+		padding:2rem 8.33%;
+	}
+	body > form > .wrapper > .col-1-6 {
+		float: none;
+		display:inline-block;
+	}
+	
+	#products .col-1-4:nth-child(2), #products .col-1-4:nth-child(3) {
+		margin-bottom:2.78rem;
+	}
+	/*----------------------------------
+	3.3 - Site footer
+	-----------------------------------*/
 	footer .col-1-4 {
 		width:83.33%;
 		float:none;
 		margin:0 auto;
+		display:-webkit-box;
+		display:-ms-flexbox;
 		display:flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
-	
 	footer .col-1-3 {
 		width:30%;
 		float:right !important;
+	}
+	/*--------------------------------------------------------------
+	4.0 - Media
+	--------------------------------------------------------------*/
+	#map {
+		width:46% !important;
+		height: 135px;
 	}
 }
